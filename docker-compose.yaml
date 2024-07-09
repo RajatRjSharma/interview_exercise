@@ -19,9 +19,9 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: localadmin
       MONGO_INITDB_ROOT_PASSWORD: localadmin
-      MONGO_DB_NAME: unibuddy-chat-local
+      MONGO_INITDB_DATABASE: unibuddy-chat-local
     ports:
-      - 27017:27017
+      - 27018:27017
     healthcheck:
       test:
         [
